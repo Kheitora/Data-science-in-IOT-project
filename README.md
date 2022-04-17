@@ -32,6 +32,15 @@ nano ~/file_name.py
 
 Voor een meer gedetailleerdere uitleg verwijs ik je naar de pagina die mij enorm heeft geholpen, waar ook alles wordt uitgelegd: https://pimylifeup.com/raspberry-pi-humidity-sensor-dht22/<br/>
 
+## inspiratie
+Ik heb inspiratie en stukjes code kunnen halen uit twee verschillende bronnen:<br/>
+
+- De docent zijn gegeven code voor de connectie met thingspeak: <br/>
+https://github.com/robvdw/CMIDAT01K-DATA-SCIENCE-for-IOT/blob/master/Code/ThingSpeak_Python_v3_Example.py<br/>
+- Een tutorial voor werken met een DHT22 sensor (raspberry pi):<br/>
+https://pimylifeup.com/raspberry-pi-humidity-sensor-dht22/<br/>
+
+
 ## Data soort
 De data die ik gebruik in mijn applicatie is: <br/>
 
@@ -52,10 +61,15 @@ In continue- tijddynamica wordt de variabele tijd behandeld als continu, en de v
 Ik ben natuurlijk niet gelijk op dit product gekomen, hiervoor heb ik veel verschillende dingen moeten uitvogelen. 
 
 ### iteratie 1
-Ik had een product gemaakt dat, met de DHT22 en een bodemvochtsensor, luchtvochtigheid, bodemvochtigheid en temperatuur opmeet. Dit had ik gedaan met een Arduino uno. Er zit geen wifi module ingebouwd in de Arduino uno, wat later een probleem werd. Ik had geprobeerd een wifi module werkend te krijgen aan de arduino uno, echter is mij dit niet gelukt. Ik had een nieuw board gebruikt om de ESP8266 (wifi module) aan te kunnen sturen, maar om een of andere reden kon hij de seriële port van de arduino uno niet meer zien. Dit heb ik toen een hele week geprobeerd om op te lossen zonder succes.
+Ik had een product gemaakt dat, met de DHT22 en een bodemvochtsensor, luchtvochtigheid, bodemvochtigheid en temperatuur opmeet. Dit had ik gedaan met een Arduino uno en javascript. Er zit geen wifi module ingebouwd in de Arduino uno, wat later een probleem werd. Ik had geprobeerd een wifi module werkend te krijgen aan de arduino uno, echter is mij dit niet gelukt. Ik had een nieuw board gebruikt om de ESP8266 (wifi module) aan te kunnen sturen, maar om een of andere reden kon hij de seriële port van de arduino uno niet meer zien. Dit heb ik toen een hele week geprobeerd om op te lossen zonder succes.
 
 ### iteratie 2
-Omdat de arduino uno niet mee wou werken heb ik ervoor besloten (een week voor de oplevering) om toch maar met de raspberry pi te gaan werken. Dit verliep iets soepeler, al was ik in het begin wel vergeten hoe ik de raspberry pi moest gebruiken. Dit was echter al snel opgelost door het kijken van een tutorial.
+Omdat de arduino uno niet mee wou werken heb ik ervoor besloten (een week voor de oplevering) om toch maar met de raspberry pi en met python(3) te gaan werken. Dit verliep iets soepeler, al was ik in het begin wel vergeten hoe ik de raspberry pi moest gebruiken. Dit was echter al snel opgelost door het kijken van een tutorial.
+
+In iteratie 2 heb ik een "product" gemaakt dat mij direct heeft geholpen met mijn laatste iteratie (iteratie 3). Ik had namelijk code geschreven waardoor de DHT22 luchtvochtigheid en temperatuur kon meten met de raspberry pi. Ik was toen bezig om dit op te sturen naar thingspeak, echter had ik hier wederom een probleem met het opsturen van de data. Omdat ik python 3 had gebruikt met een tutorial die gemaakt was met een oudere versie, was mijn code foutief, en kon ik dus geen connectie maken met thingspeak. Uiteindelijk ben ik online gaan kijken voor andere tutorials die ik wel kon gebruiken met python 3, wat resulteerde in de laatste iteratie van het product. (Ik had ervoor gekozen om de bodemvochtsensor niet te gebruiken met de raspberry pi, omdat ik daar te weinig tijd voor had, sinds ik een week van tevoren had bedacht om van microcontroller naar microcomputer te switchen).
+
+### iteratie 3
+In deze iteratie heb ik het product werkend gekregen. Ik had een voorbeeld code gevonden van de docent over hoe je een connectie met thingspeak moest maken dat gemaakt was voor python3. In deze code stond echter niet hoe ik de data van de sensoren moest doorsturen naar thingspeak. Om dit voor elkaar te krijgen heb ik onderdelen van de vorige iteratie gepakt en aangepast zodat het bij de code van de docent zou passen. Het prodcut werkt nu, het stuurt sensor data naar thingspeak door middel van de raspberry pi.
 
 ## verder werken
 Ik ga aan dit project verder werken, omdat ik zoals ik eerder al had gezegd dit nodig heb voor TLE. Op dit moment heb ik het werkend gekregen om een DHT22 aan te sluiten aan een raspberrypi en de data door te sturen naar thingspeak. In de toekomst zal het product er echter heel anders uitzien.
