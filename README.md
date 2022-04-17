@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=kuEbJSHuz8I<br/>
 
 ## Aansluiting DHT22 op Raspberry pi
 <img src="https://github.com/Kheitora/Data-science-in-IOT-project/blob/main/Raspberry-Pi-Humidity-Sensor-DHT22-Wiring-Schematic.webp"/>
-<img src=""/><br/>
+<img src="https://github.com/Kheitora/Data-science-in-IOT-project/blob/main/eigen%20aansluiting%20raspbuerry%20pi.jpeg"/><br/>
 
 ## Data soort
 De data die ik gebruik in mijn applicatie is: <br/>
