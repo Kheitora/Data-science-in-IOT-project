@@ -6,5 +6,4 @@ Voor de eindoplevering heb ik een video gemaakt van de applicatie. Dit heb ik ni
 De video van het project is hier te vinden: <br/>
 https://www.youtube.com/watch?v=kuEbJSHuz8I<br/>
 
-****
 ## Data soort
