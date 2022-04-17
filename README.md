@@ -7,8 +7,25 @@ De video van het project is hier te vinden: <br/>
 https://www.youtube.com/watch?v=kuEbJSHuz8I<br/>
 
 ## Aansluiting DHT22 op Raspberry pi
+Hieronder heb ik neergezet hoe ik de DHT22 heb aangesloten aan de raspberry pi.
 <img src="https://github.com/Kheitora/Data-science-in-IOT-project/blob/main/Raspberry-Pi-Humidity-Sensor-DHT22-Wiring-Schematic.webp"/>
 <img src="https://github.com/Kheitora/Data-science-in-IOT-project/blob/main/eigen%20aansluiting%20raspbuerry%20pi.jpeg"/><br/>
+
+## Raspberry pi omgeving klaarmaken voor DHT22
+Om de DHT22 te kunnen gebruiken heb ik eerst een aantal commands moeten uitvoeren in de terminal van de raspberry pi. Hieronder zal je alle commands een voor een te zien krijgen:<br/>
+
+- sudo apt-get update
+- sudo apt-get upgrade
+
+- sudo apt-get install python3-dev python3-pip
+- sudo python3 -m pip install --upgrade pip setuptools wheel
+
+- sudo pip3 install --install-option="--force-pi" Adafruit_DHT
+
+Om de file aan te maken waarin je gaat werken gebruik je de volgende code, ook weer in de terminal.
+nano ~/file_name.py
+
+Voor een meer gedetailleerdere uitleg verwijs ik je naar de pagina die mij enorm heeft geholpen, waar ook alles wordt uitgelegd: https://pimylifeup.com/raspberry-pi-humidity-sensor-dht22/<br/>
 
 ## Data soort
 De data die ik gebruik in mijn applicatie is: <br/>
