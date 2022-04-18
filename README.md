@@ -5,6 +5,9 @@ Ik heb een product gemaakt dat de luchtvochtigheid en de temperatuur in een ruim
 
 Ik heb in dit product niet gebruik gemaakt van een grondvochtsensor, omdat ik niet genoeg tijd had om dit ook nog werkend te krijgen voor de deadline. Dit zal uiteindelijk wel de bedoeling zijn voor TLE.
 
+#### hieronder staat een pipeline van mijn project.
+<img src="https://github.com/Kheitora/Data-science-in-IOT-project/blob/main/bitmap.png"/>
+
 ## video
 Voor de eindoplevering heb ik een video gemaakt van de applicatie. Dit heb ik niet alleen gedaan omdat het moest voor de opdracht, maar het is ook meteen de beste manier om te laten zien dat mijn prototype/product werkt.
 
