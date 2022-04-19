@@ -14,6 +14,13 @@ Voor de eindoplevering heb ik een video gemaakt van de applicatie. Dit heb ik ni
 De video van het project is hier te vinden: <br/>
 https://www.youtube.com/watch?v=kuEbJSHuz8I<br/>
 
+## benodigdheden
+Je hebt nodig voor dit project:
+- Raspbery pi 3
+- DHT22
+- 3 draden met mannelijk en vrouwelijk uiteinde
+- thing speak account
+
 ## Aansluiting DHT22 op Raspberry pi
 Hieronder heb ik neergezet hoe ik de DHT22 heb aangesloten aan de raspberry pi.
 <img src="https://github.com/Kheitora/Data-science-in-IOT-project/blob/main/Raspberry-Pi-Humidity-Sensor-DHT22-Wiring-Schematic.webp"/>
